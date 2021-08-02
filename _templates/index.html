@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pog James Bible</title>
+    </head>
+    <body>
+        <h1>Pog James Bible</h1>
+        {% for book in books -%}
+        <p><a href="./{{ book | lower }}">{{ book }}</a></p>
+        {% endfor -%}
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pog James Bible - {{ book }}</title>
+    </head>
+    <body>
+        <h1><a href="../">Pog James Bible</a></h1>
+        <h2>{{ book }}</h2>
+        {% for chapter in data %}
+        <h3 id="{{ chapter }}"><a href="#{{ chapter }}">Chapter {{ chapter }}</a></h3>
+        {% for paragraph in data[chapter] %}
+        <p>
+            {% for num, verse in paragraph.items() %}
+            <span id="{{ chapter }}v{{ num }}">(<a href="#{{ chapter }}v{{ num }}">{{ num }})</a> {{ verse }}</span>
+            {% endfor %}
+        </p>
+        {% endfor %}
+        {% endfor %}
+    </body>
+</html>
