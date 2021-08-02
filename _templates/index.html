@@ -2,11 +2,58 @@
 <html>
     <head>
         <title>Pog James Bible</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
+            body {
+                background-color: #f4f2e8;
+                font-family: 'Nunito Sans', sans-serif;
+            }
+
+            main {
+                max-width: 720px;
+                padding: 1rem 0.5rem 1rem 0.5rem;
+                margin: 3rem auto 3rem auto;
+                line-height: 1.8;
+            }
+
+            h1, h2, h3 {
+                text-align: center;
+                margin: 0;
+            }
+
+            hr {
+                margin: 0rem 2rem 2rem 2rem;
+            }
+
+            img {
+                max-height: 400px; 
+                max-width: 550px;
+                width: auto; 
+                display:block; 
+                margin:auto;
+            }
+
+            a {
+                border-bottom: dotted 1px transparent;
+                text-decoration: none;
+                color: rgb(90, 90, 90);
+                -moz-transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+                -webkit-transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+                -ms-transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+                transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+            }
+            a:hover {
+                border-bottom: dotted 1px rgba(128,128,128,1);
+            }
+        </style>
     </head>
     <body>
-        <h1>Pog James Bible</h1>
-        {% for book in books -%}
-        <p><a href="./{{ book | lower }}">{{ book }}</a></p>
-        {% endfor -%}
+        <main>
+            <h1>Pog James Bible</h1>
+            {% for book in books -%}
+            <h2><a href="./{{ book | lower }}">{{ book }}</a></h2>
+            {% endfor -%}
+        </main>
     </body>
 </html>

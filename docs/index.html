@@ -2,74 +2,121 @@
 <html>
     <head>
         <title>Pog James Bible</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
+            body {
+                background-color: #f4f2e8;
+                font-family: 'Nunito Sans', sans-serif;
+            }
+
+            main {
+                max-width: 720px;
+                padding: 1rem 0.5rem 1rem 0.5rem;
+                margin: 3rem auto 3rem auto;
+                line-height: 1.8;
+            }
+
+            h1, h2, h3 {
+                text-align: center;
+                margin: 0;
+            }
+
+            hr {
+                margin: 0rem 2rem 2rem 2rem;
+            }
+
+            img {
+                max-height: 400px; 
+                max-width: 550px;
+                width: auto; 
+                display:block; 
+                margin:auto;
+            }
+
+            a {
+                border-bottom: dotted 1px transparent;
+                text-decoration: none;
+                color: rgb(90, 90, 90);
+                -moz-transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+                -webkit-transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+                -ms-transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+                transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+            }
+            a:hover {
+                border-bottom: dotted 1px rgba(128,128,128,1);
+            }
+        </style>
     </head>
     <body>
-        <h1>Pog James Bible</h1>
-        <p><a href="./genesis">Genesis</a></p>
-        <p><a href="./exodus">Exodus</a></p>
-        <p><a href="./leviticus">Leviticus</a></p>
-        <p><a href="./numbers">Numbers</a></p>
-        <p><a href="./deuteronomy">Deuteronomy</a></p>
-        <p><a href="./joshua">Joshua</a></p>
-        <p><a href="./judges">Judges</a></p>
-        <p><a href="./ruth">Ruth</a></p>
-        <p><a href="./1 samuel">1 Samuel</a></p>
-        <p><a href="./2 samuel">2 Samuel</a></p>
-        <p><a href="./1 kings">1 Kings</a></p>
-        <p><a href="./2 kings">2 Kings</a></p>
-        <p><a href="./1 chronicles">1 Chronicles</a></p>
-        <p><a href="./2 chronicles">2 Chronicles</a></p>
-        <p><a href="./ezra">Ezra</a></p>
-        <p><a href="./nehemiah">Nehemiah</a></p>
-        <p><a href="./esther">Esther</a></p>
-        <p><a href="./job">Job</a></p>
-        <p><a href="./psalms">Psalms</a></p>
-        <p><a href="./proverbs">Proverbs</a></p>
-        <p><a href="./ecclesiastes">Ecclesiastes</a></p>
-        <p><a href="./solomon's song">Solomon's Song</a></p>
-        <p><a href="./isaiah">Isaiah</a></p>
-        <p><a href="./jeremiah">Jeremiah</a></p>
-        <p><a href="./lamentations">Lamentations</a></p>
-        <p><a href="./ezekiel">Ezekiel</a></p>
-        <p><a href="./daniel">Daniel</a></p>
-        <p><a href="./hosea">Hosea</a></p>
-        <p><a href="./joel">Joel</a></p>
-        <p><a href="./amos">Amos</a></p>
-        <p><a href="./obadiah">Obadiah</a></p>
-        <p><a href="./jonah">Jonah</a></p>
-        <p><a href="./micah">Micah</a></p>
-        <p><a href="./nahum">Nahum</a></p>
-        <p><a href="./habakkuk">Habakkuk</a></p>
-        <p><a href="./zephaniah">Zephaniah</a></p>
-        <p><a href="./haggai">Haggai</a></p>
-        <p><a href="./zechariah">Zechariah</a></p>
-        <p><a href="./malachi">Malachi</a></p>
-        <p><a href="./matthew">Matthew</a></p>
-        <p><a href="./mark">Mark</a></p>
-        <p><a href="./luke">Luke</a></p>
-        <p><a href="./john">John</a></p>
-        <p><a href="./acts">Acts</a></p>
-        <p><a href="./romans">Romans</a></p>
-        <p><a href="./1 corinthians">1 Corinthians</a></p>
-        <p><a href="./2 corinthians">2 Corinthians</a></p>
-        <p><a href="./galatians">Galatians</a></p>
-        <p><a href="./ephesians">Ephesians</a></p>
-        <p><a href="./philippians">Philippians</a></p>
-        <p><a href="./colossians">Colossians</a></p>
-        <p><a href="./1 thessalonians">1 Thessalonians</a></p>
-        <p><a href="./2 thessalonians">2 Thessalonians</a></p>
-        <p><a href="./1 timothy">1 Timothy</a></p>
-        <p><a href="./2 timothy">2 Timothy</a></p>
-        <p><a href="./titus">Titus</a></p>
-        <p><a href="./philemon">Philemon</a></p>
-        <p><a href="./hebrews">Hebrews</a></p>
-        <p><a href="./james">James</a></p>
-        <p><a href="./1 peter">1 Peter</a></p>
-        <p><a href="./2 peter">2 Peter</a></p>
-        <p><a href="./1 john">1 John</a></p>
-        <p><a href="./2 john">2 John</a></p>
-        <p><a href="./3 john">3 John</a></p>
-        <p><a href="./jude">Jude</a></p>
-        <p><a href="./revelation">Revelation</a></p>
-        </body>
+        <main>
+            <h1>Pog James Bible</h1>
+            <h2><a href="./genesis">Genesis</a></h2>
+            <h2><a href="./exodus">Exodus</a></h2>
+            <h2><a href="./leviticus">Leviticus</a></h2>
+            <h2><a href="./numbers">Numbers</a></h2>
+            <h2><a href="./deuteronomy">Deuteronomy</a></h2>
+            <h2><a href="./joshua">Joshua</a></h2>
+            <h2><a href="./judges">Judges</a></h2>
+            <h2><a href="./ruth">Ruth</a></h2>
+            <h2><a href="./1 samuel">1 Samuel</a></h2>
+            <h2><a href="./2 samuel">2 Samuel</a></h2>
+            <h2><a href="./1 kings">1 Kings</a></h2>
+            <h2><a href="./2 kings">2 Kings</a></h2>
+            <h2><a href="./1 chronicles">1 Chronicles</a></h2>
+            <h2><a href="./2 chronicles">2 Chronicles</a></h2>
+            <h2><a href="./ezra">Ezra</a></h2>
+            <h2><a href="./nehemiah">Nehemiah</a></h2>
+            <h2><a href="./esther">Esther</a></h2>
+            <h2><a href="./job">Job</a></h2>
+            <h2><a href="./psalms">Psalms</a></h2>
+            <h2><a href="./proverbs">Proverbs</a></h2>
+            <h2><a href="./ecclesiastes">Ecclesiastes</a></h2>
+            <h2><a href="./solomon's song">Solomon's Song</a></h2>
+            <h2><a href="./isaiah">Isaiah</a></h2>
+            <h2><a href="./jeremiah">Jeremiah</a></h2>
+            <h2><a href="./lamentations">Lamentations</a></h2>
+            <h2><a href="./ezekiel">Ezekiel</a></h2>
+            <h2><a href="./daniel">Daniel</a></h2>
+            <h2><a href="./hosea">Hosea</a></h2>
+            <h2><a href="./joel">Joel</a></h2>
+            <h2><a href="./amos">Amos</a></h2>
+            <h2><a href="./obadiah">Obadiah</a></h2>
+            <h2><a href="./jonah">Jonah</a></h2>
+            <h2><a href="./micah">Micah</a></h2>
+            <h2><a href="./nahum">Nahum</a></h2>
+            <h2><a href="./habakkuk">Habakkuk</a></h2>
+            <h2><a href="./zephaniah">Zephaniah</a></h2>
+            <h2><a href="./haggai">Haggai</a></h2>
+            <h2><a href="./zechariah">Zechariah</a></h2>
+            <h2><a href="./malachi">Malachi</a></h2>
+            <h2><a href="./matthew">Matthew</a></h2>
+            <h2><a href="./mark">Mark</a></h2>
+            <h2><a href="./luke">Luke</a></h2>
+            <h2><a href="./john">John</a></h2>
+            <h2><a href="./acts">Acts</a></h2>
+            <h2><a href="./romans">Romans</a></h2>
+            <h2><a href="./1 corinthians">1 Corinthians</a></h2>
+            <h2><a href="./2 corinthians">2 Corinthians</a></h2>
+            <h2><a href="./galatians">Galatians</a></h2>
+            <h2><a href="./ephesians">Ephesians</a></h2>
+            <h2><a href="./philippians">Philippians</a></h2>
+            <h2><a href="./colossians">Colossians</a></h2>
+            <h2><a href="./1 thessalonians">1 Thessalonians</a></h2>
+            <h2><a href="./2 thessalonians">2 Thessalonians</a></h2>
+            <h2><a href="./1 timothy">1 Timothy</a></h2>
+            <h2><a href="./2 timothy">2 Timothy</a></h2>
+            <h2><a href="./titus">Titus</a></h2>
+            <h2><a href="./philemon">Philemon</a></h2>
+            <h2><a href="./hebrews">Hebrews</a></h2>
+            <h2><a href="./james">James</a></h2>
+            <h2><a href="./1 peter">1 Peter</a></h2>
+            <h2><a href="./2 peter">2 Peter</a></h2>
+            <h2><a href="./1 john">1 John</a></h2>
+            <h2><a href="./2 john">2 John</a></h2>
+            <h2><a href="./3 john">3 John</a></h2>
+            <h2><a href="./jude">Jude</a></h2>
+            <h2><a href="./revelation">Revelation</a></h2>
+            </main>
+    </body>
 </html>
