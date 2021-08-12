@@ -35,6 +35,7 @@ for key, value in raw.items():
     val = rep(val, "\\bsinned\\b", "cringed")
     val = rep(val, "\\bsinneth\\b", "cringeth")
     val = rep(val, "\\bsinfun\\b", "cringeful")
+    val = rep(val, "\\bgreat\\b", "pog")
     bible[book][chapter][len(bible[book][chapter])-1][verse] = val
 
 with open('bible.json', 'w') as fd:
