@@ -27,7 +27,7 @@ for key, value in raw.items():
     if len(bible[book][chapter]) == 0 or value.startswith('#'):
         bible[book][chapter].append({})
     val = rep(value, "^# ", "")
-    val = rep(val, "in us", "among us")
+    val = rep(val, "\\bin us\\b", "among us")
     val = rep(val, "\\bsin\\b", "cringe")
     val = rep(val, "\\bsins\\b", "cringes")
     val = rep(val, "\\bsinner\\b", "cringer")
